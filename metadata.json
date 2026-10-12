@@ -1,0 +1,6 @@
+{
+  "name": "جسر الأسرة في السويد",
+  "description": "دليل معرفي وتفاعلي موجه للأسر العربية في السويد لفهم التعليم والخدمات الاجتماعية وحقوق الطفل والقوانين الأسرية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

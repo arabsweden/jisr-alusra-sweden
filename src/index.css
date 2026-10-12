@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 18px;
+    -webkit-text-size-adjust: 100%;
+    transition: font-size 0.15s ease-in-out;
+  }
+
+  html.font-scale-small {
+    font-size: 15px !important;
+  }
+
+  html.font-scale-medium {
+    font-size: 18px !important;
+  }
+
+  html.font-scale-large {
+    font-size: 21px !important;
+  }
+
+  html.font-scale-huge {
+    font-size: 24px !important;
+  }
+
+  body {
+    font-family: 'Tajawal', 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    line-height: 1.75;
+    color: #123B4A;
+    background-color: #F7F5EF;
+    font-weight: 500;
+  }
+
+  /* Ensure paragraph and text elements have comfortable line height and crisp rendering */
+  p, span, li, button, input, select, textarea {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+:root {
+  --color-primary: #185C7A;
+  --color-secondary: #2F8F83;
+  --color-accent: #F2C86B;
+  --color-bg-light: #F7F5EF;
+  --color-text-dark: #123B4A;
+}
+
+/* Print styling for saving articles and templates as PDF */
+@media print {
+  header, footer, nav, button, .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 14pt;
+    line-height: 1.6;
+  }
+  .print-container {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}
